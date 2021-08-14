@@ -10,10 +10,18 @@ header{
     font-weight: 900;
     float: left;
     text-align: center;
-
+    position: fixed;
+    width:100%;
+    z-index: 200;
+    height:60px;
+    background-color: white;
     margin: 0;
     text-decoration: none;
     
+}
+a:active
+{
+    color: darkorange;
 }
 a
 {
@@ -66,7 +74,14 @@ hr{
     height:50px;
     border: none;
 }
-.para,.menu-content,.reservation
+ul{
+    text-align:left;
+    align-items: center;
+    padding-left:30%;
+    font-family: rush Script MT, Brush Script Std, cursive;
+    font-size: medium;
+}
+.para,.menu-content,.reservation,.catering
 {
     align-items: center;
     text-align: center;
@@ -129,6 +144,29 @@ table
     font-size: 20px;
     padding-left: 10px;
 }
+.main2
+
+{
+    align-items: center;
+    text-align: center;
+    background-color: darkorange;
+    width:100%;
+    margin:0;
+    padding:0;
+    position: fixed;
+    height:100%;
+   
+}
+.container
+{
+    background-color: white;
+    width:50%;
+    margin-top: 100px;
+     padding-top:5%;
+    margin-left:30%;
+    height:50%;
+    color:cadetblue;
+}
 .location
 {
     color:white;
@@ -137,10 +175,24 @@ table
     padding-bottom: 40px;
     background-color: rgba(255, 140, 0);
 }
-.details
+li:hover{
+    color:rgba(255, 140, 0);
+}
+.details,.imgcat
 {
     display: flex;
     justify-content: space-evenly;
+}
+.imgcat img{
+    margin-top:4%;
+    border:2px solid rgb(87, 81, 73);
+    padding:4px;
+   
+}
+.imgcat img:hover
+{
+    padding:0px;
+   height:304px;
 }
 .details2
 {
@@ -149,7 +201,7 @@ table
     justify-content: space-evenly;
 
 }
-.last
+.last,.first
 {
     text-align: center;
     color: gray;
@@ -180,6 +232,13 @@ form input,textarea,select{
     padding-left: 20px;
     background-color: whitesmoke;
   
+}
+.phone:hover{
+    color: rgba(255, 140, 0);
+}
+select
+{
+    width:107%;
 }
 .res:hover{
     color:white;
